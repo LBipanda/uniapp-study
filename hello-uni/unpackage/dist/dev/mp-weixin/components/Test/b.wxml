@@ -1,0 +1,1 @@
+<view>这是b组件<button type="default" data-event-opts="{{[['tap',[['handler',['$event']]]]]}}" bindtap="__e">给兄弟组件传值</button></view>

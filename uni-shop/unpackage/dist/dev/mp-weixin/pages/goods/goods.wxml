@@ -1,0 +1,1 @@
+<view class="goods"><goods-list-com vue-id="576f0adc-1" goodsList="{{goodsList}}" listFlag="{{listFlag}}" data-event-opts="{{[['^goodsItemClick',[['toGoodsDeatil']]]]}}" bind:goodsItemClick="__e" bind:__l="__l"></goods-list-com></view>

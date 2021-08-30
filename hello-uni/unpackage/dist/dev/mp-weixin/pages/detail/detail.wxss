@@ -1,0 +1,12 @@
+
+.box{
+	width: 100px;
+	height: 100px;
+	background-color: #007AFF;
+}
+.box-active{
+	width: 100px;
+	height: 100px;
+	background-color: #4CD964;
+}
+

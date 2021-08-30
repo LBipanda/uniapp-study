@@ -1,0 +1,88 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{//导航跳转
+			"path":"pages/navigator/navigator"
+		},
+		{
+			"path":"pages/list/list",
+			"style":{
+				"enablePullDownRefresh": true,//下拉刷新
+				"onReachBottomDistance": 50//上拉加载
+			}
+		},
+		{//数据、事件绑定，v-for渲染
+			"path":"pages/home/home"
+		},
+		{//样式
+			"path":"pages/uni-style/uni-style"
+		},
+		{//配置页面  图片上传预览，条件注释
+			"path": "pages/message/message",
+			"style": {
+				"navigationBarTitleText": "信息页",
+				"navigationBarBackgroundColor": "#007AFF",
+				"h5": {
+					"pullToRefresh": {
+						"color":"#8B008B"
+					}
+				}
+			}
+		},
+		{//页面的生命周期  组件生命周期 兄弟组件传参
+			"path": "pages/index/index"
+		},
+		{//基础组件的使用
+			"path":"pages/detail/detail"
+		}
+		,
+		{
+			"path": "pages/contact/contact"
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "绿帽子",
+		"navigationBarBackgroundColor": "#7FFF00",
+		"backgroundColor": "#7CCD7C",
+		// "enablePullDownRefresh": true,
+		"backgroundTextStyle": "light"
+	},
+	"tabBar": {
+		"list": [
+			{
+				"text":"首页",
+				"pagePath":"pages/index/index",
+				"iconPath":"static/tabs/home.png",
+				"selectedIconPath":"static/tabs/home-active.png"
+			},
+			{
+				"text":"信息",
+				"pagePath":"pages/message/message",
+				"iconPath":"static/tabs/message.png",
+				"selectedIconPath":"static/tabs/message-active.png"
+			},
+			{
+				"text":"我们",
+				"pagePath":"pages/contact/contact",
+				"iconPath":"static/tabs/contact.png",
+				"selectedIconPath":"static/tabs/contact-active.png"
+			},
+			{
+				"text":"主页",
+				"pagePath":"pages/home/home",
+				"iconPath":"static/tabs/contact.png",
+				"selectedIconPath":"static/tabs/contact-active.png"
+			}
+		]
+	},
+	"condition":{
+		"current":0,
+		"list":[
+			{
+				"name":"详情页",
+				"path":"pages/detail/detail",
+				"query":"id=111"
+			}
+		]
+	}
+}
